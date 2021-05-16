@@ -141,6 +141,33 @@ console.log(localStorage);
       var array = []; 
      }
 
+     
+     var arrayA = JSON.parse(localStorage.getItem('arrayA'));
+     //...........................................//
+     if(!arrayA){
+      var arrayA = []; 
+     }
+     
+     var arrayB = JSON.parse(localStorage.getItem('arrayB'));
+     //...........................................//
+     if(!arrayB){
+      var arrayB = []; 
+     }
+     
+     var arrayC = JSON.parse(localStorage.getItem('arrayC'));
+     //...........................................//
+     if(!arrayC){
+      var arrayC = []; 
+     }
+     
+     var arrayD = JSON.parse(localStorage.getItem('arrayD'));
+     //...........................................//
+     if(!arrayD){
+      var arrayD = []; 
+     }
+
+   
+
      //Add to cart
      $("#add").click(function(){
    
@@ -150,14 +177,19 @@ var b=document.getElementById("came").src;
 var c=$("#price").text();
 var d=$("#text").text();
 var e=$("#help").text();
+arrayA.push(a);
+arrayB.push(b);
+arrayC.push(c);
+arrayD.push(d);
 array.push(e);
 
 
-localStorage.setItem("inputVal",a);
-localStorage.setItem("ProImg",b);
-localStorage.setItem("ProPrice",c);
-localStorage.setItem("ProName",d);
+localStorage.setItem("arrayA",JSON.stringify(arrayA));
+localStorage.setItem("arrayB",JSON.stringify(arrayB));
+localStorage.setItem("arrayC",JSON.stringify(arrayC));
+localStorage.setItem("arrayD",JSON.stringify(arrayD));
 localStorage.setItem("array",JSON.stringify(array));
+
 
      });
 
