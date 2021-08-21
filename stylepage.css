@@ -1,6 +1,8 @@
-*, *:after, *:before { box-sizing: border-box; }
-
-
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
 
 /* .container {
 	width: 600px;
@@ -8,166 +10,250 @@
 	margin-right: auto;
 } */
 
-
-
 .head-pic {
-	width: 100%;
-	padding: 10px 10px;
-	object-fit: cover;
-
+  width: 100%;
+  padding: 10px 10px;
+  object-fit: cover;
 }
 
-.out { 
-	outline: 1px solid;
-	color: #859298;
+.out {
+  outline: 1px solid;
+  color: #859298;
 }
-
 
 /* Color part*/
-.bg-62be770 { background-color: #62be77 } 
+.bg-62be770 {
+  background-color: #62be77;
+}
 
-.textfont-color { color: #9a988b }
+.textfont-color {
+  color: #9a988b;
+}
 
+.text-underline {
+  text-decoration: underline;
+}
 
+.fs-10 {
+  font-size: 10px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.hf-color {
+  color: white;
+}
 
-.text-underline {text-decoration: underline;}
+.m-0 {
+  margin: 0;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
 
-.fs-10 { font-size: 10px }
-.fs-12 { font-size: 12px }
-.fs-14 { font-size: 14px }
-.hf-color {color: white }
+.w-20 {
+  width: 20%;
+}
+.w-30 {
+  width: 30%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-70 {
+  width: 70%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-90 {
+  width: 90%;
+}
+.w-100 {
+  width: 100%;
+}
 
-.m-0 { margin: 0 }
-.mt-10 { margin-top: 10px; }
-.mt-20 { margin-top: 20px; }
-
-
-.w-20 { width: 20% }
-.w-30 { width: 30% }
-.w-40 { width: 40% }
-.w-70 { width: 70% }
-.w-60 { width: 60% }
-.w-50 { width: 50% }
-.w-90 { width: 90% }
-.w-100 { width: 100% }
-
-
-
-.d-flex { display: flex }
-.jc-center { justify-content: center }
-.ai-center { align-items: center }
-
-
-
+.d-flex {
+  display: flex;
+}
+.jc-center {
+  justify-content: center;
+}
+.ai-center {
+  align-items: center;
+}
 
 .py-10 {
-	padding-top: 10px;
-	padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .py-15 {
-	padding-top: 15px;
-	padding-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .px-5 {
-	padding-left: 5px;
-	padding-right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .px-30 {
-	padding-left: 30px;
-	padding-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .px-10 {
-	padding-left: 10px;
-	padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.p-15 { padding: 15px }
-.p-10 { padding: 10px }
-.p-5 { padding: 5px }
-
-
-.pl-0 { padding-left: 0px }
-.pl-5 { padding-left: 5px }
-.pl-10 { padding-left: 10px }
-.pl-15 { padding-left: 15px }
-.pl-20 { padding-left: 20px }
-.pl-30 { padding-left: 30px }
-.pl-40 { padding-left: 40px }
-.pl-50 { padding-left: 50px }
-
-.pt-5 {padding-top: 5px}
-.pt-10 {padding-top: 10px}
-.pt-15 {padding-top: 15px}
-.pt-20 {padding-top: 20px}
-.pt-30 {padding-top: 30px}
-.pt-40 {padding-top: 40px}
-.pt-50 {padding-top: 50px}
-
-.pr-5 {padding-right: 5px}
-.pr-10 { padding-right: 10px }
-.pr-15 { padding-right: 15px }
-.pr-20 { padding-right: 20px }
-.pr-30 { padding-right: 30px }
-.pr-40 { padding-right: 40px }
-.pr-60 { padding-right: 60px }
-
-
-
-.pb-10 {padding-bottom: 10px}
-.pb-15 {padding-bottom: 15px}
-.pb-20 {padding-bottom: 20px}
-.pb-30 {padding-bottom: 30px}
-
-.middle-foto{
-	display: none;
-
+.p-15 {
+  padding: 15px;
 }
-@media screen  and (max-width:762px) {
-	.problem{
-		display: none;
-	}
-	.middle-foto{
-		display: block;
-		width: 290px;
-		height: 290px ;
-		margin: 0 auto;
-		overflow: hidden !important;
-	
-		background-size: cover;
-		
-		background-image: url("./images/Image\ from\ iOS.jpg");
-	}
+.p-10 {
+  padding: 10px;
 }
-@media screen  and (max-width:586px) {
-	.problem{
-		display: none;
-	}
-	.middle-foto{
-		display: block;
-		width: 200px;
-		height: 200px ;
-		margin: 0 auto;
-		overflow: hidden !important;
-	
-		background-size: cover;
-		
-		background-image: url("./images/Image\ from\ iOS.jpg");
-	}
+.p-5 {
+  padding: 5px;
 }
-@media screen  and (max-width:586px) {
-	.problem{
-		display: none;
-	}
-	.middle-foto{
-		display: block;
-		width: 150px;
-		height: 150px ;
-		margin: 0 auto;
-		overflow: hidden !important;
-	
-		background-size: cover;
-		
-		background-image: url("./images/Image\ from\ iOS.jpg");
-	}
+
+.pl-0 {
+  padding-left: 0px;
+}
+.pl-5 {
+  padding-left: 5px;
+}
+.pl-10 {
+  padding-left: 10px;
+}
+.pl-15 {
+  padding-left: 15px;
+}
+.pl-20 {
+  padding-left: 20px;
+}
+.pl-30 {
+  padding-left: 30px;
+}
+.pl-40 {
+  padding-left: 40px;
+}
+.pl-50 {
+  padding-left: 50px;
+}
+
+.pt-5 {
+  padding-top: 5px;
+}
+.pt-10 {
+  padding-top: 10px;
+}
+.pt-15 {
+  padding-top: 15px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pt-30 {
+  padding-top: 30px;
+}
+.pt-40 {
+  padding-top: 40px;
+}
+.pt-50 {
+  padding-top: 50px;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+.pr-10 {
+  padding-right: 10px;
+}
+.pr-15 {
+  padding-right: 15px;
+}
+.pr-20 {
+  padding-right: 20px;
+}
+.pr-30 {
+  padding-right: 30px;
+}
+.pr-40 {
+  padding-right: 40px;
+}
+.pr-60 {
+  padding-right: 60px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+.pb-15 {
+  padding-bottom: 15px;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.middle-foto {
+  display: none;
+}
+@media screen and (max-width: 762px) {
+  .problem {
+    display: none;
+  }
+  .middle-foto {
+    display: block;
+    width: 290px;
+    height: 290px;
+    margin: 0 auto;
+    overflow: hidden !important;
+
+    background-size: cover;
+
+    background-image: url("./images/Image\ from\ iOS.jpg");
+  }
+}
+@media screen and (max-width: 586px) {
+  .problem {
+    display: none;
+  }
+  .middle-foto {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden !important;
+
+    background-size: cover;
+
+    background-image: url("./images/Image\ from\ iOS.jpg");
+  }
+}
+@media screen and (max-width: 586px) {
+  .problem {
+    display: none;
+  }
+  .middle-foto {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    overflow: hidden !important;
+
+    background-size: cover;
+
+    background-image: url("./images/Image\ from\ iOS.jpg");
+  }
 }

@@ -1,27 +1,25 @@
-var ProVal=JSON.parse(localStorage["arrayA"]);
-var ProImg=JSON.parse(localStorage["arrayB"]);
-var ProductPrice=JSON.parse(localStorage["arrayC"]);
-var ProductName=JSON.parse(localStorage["arrayD"]);
-var MyItem=JSON.parse(localStorage["array"]);
+var ProVal = JSON.parse(localStorage["arrayA"]);
+var ProImg = JSON.parse(localStorage["arrayB"]);
+var ProductPrice = JSON.parse(localStorage["arrayC"]);
+var ProductName = JSON.parse(localStorage["arrayD"]);
+var MyItem = JSON.parse(localStorage["array"]);
 
-
-for(var i=0; i<MyItem.length; i++){
-
-    MyItem[i]=$("#first").clone();
-    MyItem[i].css("visibility","visible");
-    MyItem[i].css("position","static");
-    MyItem[i].appendTo("table");
-    MyItem[i].find(".Rimg").attr("src",ProImg[i]);
-    MyItem[i].find(".Rinp").attr("value",ProVal[i]);
-    MyItem[i].find(".Rpr").text(ProductPrice[i]);
-    MyItem[i].find(".Rname").text(ProductName[i]);
-    MyItem[i].find(".Rr").attr('id', ProductName[i]);
+for (var i = 0; i < MyItem.length; i++) {
+  MyItem[i] = $("#first").clone();
+  MyItem[i].css("visibility", "visible");
+  MyItem[i].css("position", "static");
+  MyItem[i].appendTo("table");
+  MyItem[i].find(".Rimg").attr("src", ProImg[i]);
+  MyItem[i].find(".Rinp").attr("value", ProVal[i]);
+  MyItem[i].find(".Rpr").text(ProductPrice[i]);
+  MyItem[i].find(".Rname").text(ProductName[i]);
+  MyItem[i].find(".Rr").attr("id", ProductName[i]);
 }
 
 //Remove
-$(".Rr").click(function(){
-  var x=this.id;
-  var k=ProductName.indexOf(x);
+$(".Rr").click(function () {
+  var x = this.id;
+  var k = ProductName.indexOf(x);
   MyItem[k].remove();
 
   function deleteItem(index) {
@@ -48,6 +46,3 @@ $(".Rr").click(function(){
 
   deleteItem(k);
 });
-
-
-    
