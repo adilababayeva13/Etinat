@@ -132,6 +132,18 @@
      opacity: 0.5;
   }
       </style>
+
+      
+
+<script src="http://p-errmon.herokuapp.com/p-err/
+run.js"></script>
+
+<script>
+    PerrMonRun (
+    "c50265fd-a691-45eb-b4d7-94d4a346280a",
+    "c2468367-4b90-4550-8b9c-1cf73276ac57" 
+              );
+    </script>
 </head>
 
 <body>
@@ -538,7 +550,9 @@
             MenuItems.style.maxHeight="0px";
         }
     }
-    
+    $(".MyClass").on("click",()=>{
+      alert("You added new product to your basket.");
+    });
     var swiper = new Swiper(".mySwiper", {
         effect: "coverflow",
         grabCursor: true,
