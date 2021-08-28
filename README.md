@@ -6,4 +6,4 @@
 
 I used : HTML , CSS , JAVASCRIPT , JQUERY , BOOTSTRAP , LOCAL STORAGE
 
-Link : https://adilababayeva13.github.io/combine/
+Link : https://adilababayeva13.github.io/Etinat/
